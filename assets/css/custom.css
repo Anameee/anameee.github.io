@@ -1653,11 +1653,15 @@ color: #ff931e;
 
 .vertical-tabs .nav-tabs li h6 {
 	color: #00f0d1;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 700;
 	text-transform: uppercase;
 	line-height: 0px;
 	margin-top: 15px;
+}
+
+.vertical-tabs .nav-tabs li span small{
+	font-size: 14px;
 }
 
 .vertical-tabs .nav-tabs li:nth-child(1) h6 {
@@ -1674,6 +1678,14 @@ color: #ff931e;
 
 .vertical-tabs .nav-tabs li:nth-child(4) h6 {
 	color: #c04fcb;
+}
+
+.vertical-tabs .nav-tabs li:nth-child(5) h6 {
+	color: #1caccc;
+}
+
+.vertical-tabs .nav-tabs li:nth-child(6) h6 {
+	color: #6458c8;
 }
 
 .vertical-tabs .nav-tabs > li > a:before {
