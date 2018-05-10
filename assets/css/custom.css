@@ -216,6 +216,32 @@ textarea {
 	color: inherit;
 }
 
+.adataim-form input,
+							select,
+							textarea {
+	border: 2px solid #ebebeb;
+	margin-bottom: 20px;
+	background-color: #fff;
+}
+
+.adataim-form ::-moz-placeholder {
+	color: #404040;
+	font-size: 15px;
+	font-style: normal;
+}
+
+.adataim-form ::-webkit-input-placeholder {
+	color: #404040;
+	font-size: 15px;
+	font-style: normal;
+}
+
+.adataim-form ::-ms-input-placeholder {
+	color: #404040;
+	font-size: 15px;
+	font-style: normal;
+}
+
 label {
 	position: relative;
 	font-weight: normal;
