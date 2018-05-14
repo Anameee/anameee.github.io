@@ -3956,10 +3956,16 @@ blockquote footer img {
 
 
 #section-7 {
-	padding: 100px 0 80px;
+	padding: 30px 30px;
 	margin-top: 0px;
 	margin-bottom: 0;
 	background-color: #f1f6f9;
+}
+
+@media (min-width: 992px){
+	#section-7{
+		padding: 100px 0 80px;
+	}
 }
 
 #section-8 {
