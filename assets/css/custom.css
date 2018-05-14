@@ -775,7 +775,7 @@ color: #ff931e;
   opacity: 0; }
 
 	.tooltip.show {
-	opacity: 0.9; }
+	opacity: 1; }
 
 	.tooltip .arrow {
 	position: absolute;
@@ -1202,10 +1202,16 @@ color: #ff931e;
 /***********************************************************************************
  *	+ TEXT BOXES
  ***********************************************************************************/
+.erdekel{
+color: #252525;
+font-size: 12px;
+font-weight: 700;
+letter-spacing: 1.2px;
+}
 
 .text-box {
-	padding: 25px 30px;
-	margin-bottom: 30px;
+	padding: 20px 30px;
+	margin-bottom: 15px;
 	background: #f4f8f9 no-repeat center;
 	background-size: cover;
 	color: #838383;
