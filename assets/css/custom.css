@@ -4522,28 +4522,6 @@ blockquote footer img {
 
 }
 
-@media (min-width: 485px){
-	.about-container{
-		margin-left:40px;
-		margin-right:40px;
-	}
-}
-
-@media (min-width: 992px){
-	.about-container{
-	margin-left:150px
-	}
-}
-@media (min-width: 1200px){
-	.about-container{
-		margin-left:180px
-	}
-}
-@media (min-width: 1400px){
-	.about-container{
-  margin-left:200px
-	}
-}
 
 @media (max-width: 767px) {
 
