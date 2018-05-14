@@ -505,10 +505,17 @@ input[type="button"]:focus {
 /***********************************************************************************
  *	+ HEADLINE
  ***********************************************************************************/
-
-.headline {
-	margin-bottom: 100px;
+ .headline {
+	 margin-bottom: 50px;
+ }
 }
+
+@media (min-width: 772px){
+	.headline {
+		margin-bottom: 100px;
+	}
+}
+
 
 .headline h1,
 .headline h2,

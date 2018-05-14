@@ -2640,6 +2640,13 @@
 	transition: all 0.25s;
 }
 
+.adataim-form label{
+	color: #aaa;
+	font-size: 14px;
+	font-style: italic;
+
+}
+
 #commentform #url,
 #commentform #name,
 #commentform #email,
