@@ -776,20 +776,30 @@
 	line-height: 64px;
 }
 
+#page-header .decode-icon-cursor{
+	font-size: 20px;
+	margin-bottom: 0px;
+	line-height: 10px;
+}
+
 #page-header h1 {
 	color: inherit;
 	font-size: 36px;
 	line-height: 45px;
 }
 
-#page-header h1:after {
+#page-header h5{
+		color: inherit;
+	}
+
+/*#page-header h1:after {
 	display: block;
 	width: 25px;
 	height: 2px;
 	margin: 20px auto 0;
 	background-color: #fff;
 	content: "";
-}
+}*/
 
 #page-header .overlay {
 	position: absolute;
@@ -1740,8 +1750,8 @@
 }
 
 .service-box.style-8.large {
-	padding-top: 70px;
-	padding-bottom: 120px;
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 
 .service-box.style-8 > i {

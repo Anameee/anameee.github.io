@@ -4667,9 +4667,9 @@ blockquote footer img {
 }
 
 #video-section {
-	height: 700px;
+	height: 100vh;
 	padding: 0;
-	margin-top: 100px;
+	margin-top:0px;
 	margin-bottom: 0;
 }
 
