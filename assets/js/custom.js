@@ -862,11 +862,11 @@
                                 },
                                 messages: {
                                         name: {
-                                                required: "Please enter your name!"
+                                                required: "Add meg a nevedet!"
                                         },
                                         email: {
-                                                required: "Please enter your email!",
-                                                email: "Please enter a valid email address"
+                                                required: "Kérlek add meg az email-címed!",
+                                                email: "Kérlek valós e-mail címet adj meg!"
                                         },
                                         subject: {
                                                 required: "Please enter the subject!"
@@ -875,6 +875,7 @@
                                                 required: "Please enter your message!"
                                         }
                                 },
+
 
                                 // SUBMIT //
                                 submitHandler: function(form) {

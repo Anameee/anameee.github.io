@@ -1125,7 +1125,7 @@ color: #ff931e;
 }
 
 .btn-white.btn-outline:after {
-	border: 2px solid #c2c2c2;
+	border: 2px solid #fff;
 	background: transparent;
 	color: #252525;
 }
@@ -1136,7 +1136,7 @@ color: #ff931e;
 .btn-outline:focus,
 .btn-outline:active:focus {
 	background: transparent;
-	color: #252525;
+	color: #fff;
 }
 
 .btn-outline:after {
