@@ -1615,12 +1615,21 @@ letter-spacing: 1.2px;
 .dark-section-2 h1{
 	color: #fff;
 	font-size: 90px;
+	margin-bottom: 20px;
 }
 
 .dark-section-2 h6{
 	color: #fff;
 	margin-top: 10px;
 	margin-bottom: 15px;
+}
+
+.dark-section-2 a{
+	color: #fff;
+}
+
+.dark-section-2 a:hover{
+	color: #00f0d1;
 }
 
 .full-section.dark-section .style-2 .panel-title a:hover:after,
