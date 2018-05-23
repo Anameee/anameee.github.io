@@ -1612,6 +1612,17 @@ letter-spacing: 1.2px;
 	background-color: #252525;
 }
 
+.dark-section-2 h1{
+	color: #fff;
+	font-size: 90px;
+}
+
+.dark-section-2 h6{
+	color: #fff;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
 .full-section.dark-section .style-2 .panel-title a:hover:after,
 .full-section.dark-section .style-2 .panel-title a[aria-expanded="true"]:after {
 	background-color: #fff;
