@@ -64,7 +64,7 @@
 		<!-- PAGE CONTENT -->
 		<div id="page-content">
 
-			<section class="full-section  full-screen" id="section-52">
+			<section class="full-section" id="section-52">
 
 				<div class="full-section-blending"></div>
 
@@ -72,30 +72,17 @@
 
 					<div class="container">
 						<div class="row">
-							<div class="col-md-10 mx-auto">
+							<div class="col-md-8 mx-auto bg-light p-5">
 
 								<div class="headline text-center">
-
-                 <i class="decode-icon-multimedia text-light wow tada"></i>
-									<h3 class="text-light">Hírlevél-feliratkozás</h3>
-									<p class="lead text-light mt-5">Ha régimódi vagy és olvasol, akkor neked jön a hasznos tartalom az informatika világából. <br>
-										Ha érdekelnek újdonságaink, tanfolyamok és útvonalak, akkor elsőként hallhatsz róluk.<br>
-										Amint kirepülnek, elkaphatod akciós ajánlatainkat.
-										És jobb, ha ülsz, amikor megnyitod, mert úgy meglepünk kedvezményes kódokkal!</p>
-
+									<i class="decode-icon-multimedia wow tada"></i>
+									<h3>Hírlevél-feliratkozás</h3>
 								</div>
+
+								<p class="mt-5">Ha régimódi vagy és olvasol, akkor neked jön a hasznos tartalom az informatika világából. <br> Ha érdekelnek újdonságaink, tanfolyamok és útvonalak, akkor elsőként hallhatsz róluk.<br> Amint kirepülnek, elkaphatod akciós ajánlatainkat. És jobb,
+									ha ülsz, amikor megnyitod, mert úgy meglepünk kedvezményes kódokkal!  Itt tudod elolvasni az <a href="#">Adatkezelési tájékoztatót</a>!</p>
 								<!-- headline -->
 
-							</div>
-							<!-- col -->
-						</div>
-						<!-- row -->
-					</div>
-					<!-- container -->
-
-					<div class="container">
-						<div class="row">
-							<div class="col-md-8 mx-auto">
 
 								<form id="contact-form" name="contact-form" method="post" action="assets/php/send.php">
 									<fieldset>
@@ -107,7 +94,7 @@
 												<p>
 													<input class="col-12" id="email" type="text" name="email" placeholder="" required>
 													<span></span>
-													<label for="email" class="text-light">E-mail</label>
+													<label for="email" class="">E-mail</label>
 												</p>
 											</div>
 
@@ -115,21 +102,48 @@
 												<p>
 													<input class="col-12" id="vezeteknev" type="text" name="name" placeholder="" required>
 													<span></span>
-													<label for="vezeteknev" class="text-light">Vezetéknév</label>
+													<label for="vezeteknev" class="">Vezetéknév</label>
 												</p>
 											</div>
-											<div class="col-6 mb-3">
+											<div class="col-6">
 												<p>
 													<input class="col-12" id="keresztnev" type="text" name="name" placeholder="" required>
 													<span></span>
-													<label for="keresztnev" class="text-light">Keresztnév</label>
+													<label for="keresztnev" class="">Keresztnév</label>
 												</p>
 											</div>
 										</div>
-										<button class="btn btn-white btn-outline py-0" id="submit" type="submit" name="submit" value="">Feliratkozom <i class="decode-icon-cursor" style="font-size: 20px;"></i></button>
-
 									</fieldset>
 								</form>
+
+								<h5 class="mb-3">Marketing hozzájárulás</h5>
+								<p class="mb-4">Az adataidat arra használom, hogy cikkeket és híreket küldjek neked. Amennyiben ehhez hozzájárulsz, kérlek pipáld be a rubrikákat.</p>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" value="">
+										Elfogadom az adatvédelmi tájékoztatóban írtakat.
+										<span></span>
+									</label>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" value="">
+										Hozzájárulok az eDM küldéséhez.
+										<span></span>
+									</label>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" value="">
+										Szeretném megkapni a friss cikkeket is.
+										<span></span>
+									</label>
+								</div>
+
+							<p class="mt-4 mb-5">Ha bármikor meggondolod magad, leiratkozhatsz minden levél alján található linken vagy egy e-mail elküldésével az iroda@netacademia.hu címre. Az adataiddal tisztelettel bánok, erről minden infót megtalálsz a honlapon lévő adatvédelmi tájékoztatóban. A feliratkozásra kattintva hozzájárulsz, hogy
+									feldolgozhatom az adataidat a jelen feltételeknek megfelelően. KÖSZÖNÖM!</p>
+
+								<button class="btn btn-black btn-outline py-0 text-dark" id="submit" type="submit" name="submit" value="">Feliratkozom <i class="decode-icon-cursor" style="font-size: 20px;"></i></button>
 
 							</div>
 							<!-- col -->
