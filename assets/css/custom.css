@@ -1053,6 +1053,10 @@ color: #ff931e;
 	transform: scale(1.05);
 }
 
+.btn-facebook{
+	background: #4d71a3;
+}
+
 /* DEFAULT */
 .btn-default,
 .btn-default:hover,
