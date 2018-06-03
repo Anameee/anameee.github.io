@@ -29,6 +29,13 @@ img:hover{
 		transform: scale(1.3);
 }
 
+.alma {
+	-webkit-filter: none; /* Safari 6.0 - 9.0 */
+		filter: none;
+		transform: scale(1.3);
+}
+
+
 h6{
 	color: #37688A;
 	font-size: 18px;
@@ -225,61 +232,123 @@ margin-right: 600px;
 			$('#menu_feedback').html('Nagyon rossz volt!');
 		});
 
+		$("#nagyonrossz").click(function(){
+    $(this).toggleClass("alma");
+});
+
 		$('#nemtetszett').hover( function(){
 			$('#menu_feedback').html('Nem tetszett!');
 		});
+
+		$("#nemtetszett").click(function(){
+		$(this).toggleClass("alma");
+});
 
 		$('#elment').hover( function(){
 			$('#menu_feedback').html('Egynek elment!');
 		});
 
+		$("#elment").click(function(){
+		$(this).toggleClass("alma");
+});
+
 		$('#tetszett').hover( function(){
 			$('#menu_feedback').html('Tetszett!');
 		});
+
+		$("#tetszett").click(function(){
+		$(this).toggleClass("alma");
+});
 
 		$('#imadtam').hover( function(){
 			$('#menu_feedback').html('Imádtam!');
 		});
 
+		$("#imadtam").click(function(){
+		$(this).toggleClass("alma");
+});
+
     $('#nagyonrossz2').hover( function(){
       $('#menu_feedback2').html('Nagyon rossz volt!');
     });
+
+		$("#nagyonrossz2").click(function(){
+		$(this).toggleClass("alma");
+});
 
     $('#nemtetszett2').hover( function(){
       $('#menu_feedback2').html('Nem tetszett!');
     });
 
+		$("#nemtetszett2").click(function(){
+		$(this).toggleClass("alma");
+});
+
     $('#elment2').hover( function(){
       $('#menu_feedback2').html('Egynek elment!');
     });
+
+		$("#elment2").click(function(){
+		$(this).toggleClass("alma");
+});
 
     $('#tetszett2').hover( function(){
       $('#menu_feedback2').html('Tetszett!');
     });
 
+		$("#tetszett2").click(function(){
+		$(this).toggleClass("alma");
+});
+
     $('#imadtam2').hover( function(){
       $('#menu_feedback2').html('Imádtam!');
     });
+
+		$("#imadtam2").click(function(){
+		$(this).toggleClass("alma");
+});
 
     $('#nagyonrossz3').hover( function(){
       $('#menu_feedback3').html('Nagyon rossz volt!');
     });
 
+
+				$("#nagyonrossz3").click(function(){
+				$(this).toggleClass("alma");
+		});
+
     $('#nemtetszett3').hover( function(){
       $('#menu_feedback3').html('Nem tetszett!');
     });
+
+		$("#nemtetszett3").click(function(){
+		$(this).toggleClass("alma");
+});
 
     $('#elment3').hover( function(){
       $('#menu_feedback3').html('Egynek elment!');
     });
 
+		$("#elment3").click(function(){
+		$(this).toggleClass("alma");
+});
+
     $('#tetszett3').hover( function(){
       $('#menu_feedback3').html('Tetszett!');
     });
 
+
+				$("#tetszett3").click(function(){
+				$(this).toggleClass("alma");
+		});
+
     $('#imadtam3').hover( function(){
       $('#menu_feedback3').html('Imádtam!');
     });
+
+		$("#imadtam3").click(function(){
+		$(this).toggleClass("alma");
+});
 
 		</script>
 	</body>
