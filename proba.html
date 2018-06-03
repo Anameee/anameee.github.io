@@ -1,0 +1,22 @@
+<html>
+<head>
+<script type='text/javascript' src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type='text/javascript'>
+$(function() {
+ $('.trigger').click(function() {
+  $("p").show();
+ }), $(".trigger").hover(function() {
+  //do nothing if hovered over
+ }, function(){
+  //hide on hover out
+  $("p").hide();
+ });
+});
+</script>
+</head>
+<body>
+<a href="#" class="trigger">Link</a>
+<p style="display:none;">
+ Show the text in this paragraph
+</p>
+</body>

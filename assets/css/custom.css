@@ -148,7 +148,7 @@ p {
 
 /* LINKS */
 a {
-	color: #00f0d1;
+	color: #3b73c9;
 }
 
 a:hover,
@@ -1141,7 +1141,7 @@ color: #ff931e;
 .btn-outline:focus,
 .btn-outline:active:focus {
 	background: transparent;
-	color: #fff;
+	color: #252525;
 }
 
 .btn-outline:after {
