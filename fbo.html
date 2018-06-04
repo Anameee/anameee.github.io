@@ -1,355 +1,291 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Hello, world!</title>
-		<style>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
- body{
-margin-top: 20%;
- }
+	<title>Hello, world!</title>
+	<style>
+		body {
+			margin-top: 20%;
+		}
 
-img{
-	cursor: pointer;
-	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
-		transition: all .2s ease-in-out;
-}
+		img {
+			cursor: pointer;
+			-webkit-filter: grayscale(100%);
+			/* Safari 6.0 - 9.0 */
+			filter: grayscale(100%);
+			transition: all .2s ease-in-out;
+		}
 
-img:hover{
-	cursor: pointer;
-	-webkit-filter: none; /* Safari 6.0 - 9.0 */
-    filter: none;
-		transform: scale(1.3);
-}
+		img:hover {
+			cursor: pointer;
+			-webkit-filter: none;
+			/* Safari 6.0 - 9.0 */
+			filter: none;
+			transform: scale(1.3);
+		}
 
-.alma {
-	-webkit-filter: none; /* Safari 6.0 - 9.0 */
-		filter: none;
-		transform: scale(1.3);
-}
+		h6 {
+			color: #37688A;
+			font-size: 18px;
+		}
 
+		.feedback-text {
+			margin-top: 20px;
+			color: #37688A;
+			font-weight: bold;
+		}
 
-h6{
-	color: #37688A;
-	font-size: 18px;
-}
+		.modal-body {
+			padding-top: ;
+			padding-bottom: 30px;
+			padding-left: 30px;
+			padding-right: 30px;
+		}
 
-.feedback-text{
-	margin-top: 20px;
-	color: #37688A;
-	font-weight: bold;
-}
+		.carousel {
+			width: 600px;
+			height: 300px;
+		}
 
-.modal-body{
-	padding-top:;
-	padding-bottom: 30px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.carousel{
-  width: 600px;
-  height: 300px;
-}
-
-/*.modal{
+		/*.modal{
 margin-left: 600px;
 margin-right: 600px;
 }*/
 
-@media (min-width: 1200px){
+		@media (min-width: 1200px) {}
 
-}
-	.modal-dialog-centered{
-  	width:650px;
-    height: 400px;
-  }
-}
+		.modal-dialog-centered {
+			width: 650px;
+			height: 400px;
+		}
 
+		}
+	</style>
+</head>
 
-		</style>
-  </head>
-  <body>
+<body>
 
-		<!-- Button trigger modal -->
-		<div class="container text-center">
-			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+	<!-- Button trigger modal -->
+	<div class="container text-center">
+
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
 			  Launch demo modal
-			</button>
+		</button>
 
-      <!-- Modal -->
+		<!-- Modal -->
 
-      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
 
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 
+					<div class="carousel-inner">
 
-        <div class="carousel-inner">
-          <div class="carousel-item active">
+						<div class="carousel-item active">
 
-            <div class="modal-content">
-              <div>
-                <button type="button" class="close pr-2" data-dismiss="modal" aria-label="Close">
+							<div class="modal-content">
+
+								<div>
+									<button type="button" class="close pr-2" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                	</button>
+								</div>
+
+								<div class="modal-body">
+									<h6 class="modal-title mb-4" id="exampleModalCenterTitle">Összességében mennyire vagy elégedett a tanfolyammal?</h6>
+
+									<div class="row justify-content-center my-4">
+										<div class="col-2 text-center">
+											<img id="nagyonrossz" src="assets/images/nagyonrossz.svg" alt="" width="60">
+										</div>
+										<div class="col-2 text-center">
+											<img id="nemtetszett" src="assets/images/rossz.svg" alt="" width="60">
+										</div>
+										<div class="col-2 text-center">
+											<img id="elment" src="assets/images/elmegy.svg" alt="" width="60">
+										</div>
+										<div class="col-2 text-center">
+											<img id="tetszett" src="assets/images/tetszett.svg" alt="" width="60">
+										</div>
+										<div class="col-2 text-center">
+											<img id="imadtam" src="assets/images/imádtam.svg" alt="" width="60">
+										</div>
+									</div>
+
+									<div id="menu_feedback" class="feedback-text"></div>
+
+								</div><!--modal-body-->
+								<div class="modal-footer">
+									<button type="button" class="btn btn-primary">Tovább</button>
+								</div>
+
+							</div><!--modal-content-->
+
+						</div><!--/carousel-item-->
+
+						<div class="carousel-item">
+
+							<div class="modal-content">
+								<div>
+									<button type="button" class="close pr-2" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                	</button>
+								</div>
+
+								<div class="modal-body">
+									<h6 class="modal-title mb-4" id="exampleModalCenterTitle">Mennyire vagy elégedett a tanfolyam szakmai tartalmával?</h6>
+									<div class="row justify-content-center my-4">
+										<div class="col-2">
+											<img id="nagyonrossz2" src="assets/images/nagyonrossz.svg" alt="" width="60">
+										</div>
+										<div class="col-2">
+											<img id="nemtetszett2" src="assets/images/rossz.svg" alt="" width="60">
+										</div>
+										<div class="col-2">
+											<img id="elment2" src="assets/images/elmegy.svg" alt="" width="60">
+										</div>
+										<div class="col-2">
+											<img id="tetszett2" src="assets/images/tetszett.svg" alt="" width="60">
+										</div>
+										<div class="col-2">
+											<img id="imadtam2" src="assets/images/imádtam.svg" alt="" width="60">
+										</div>
+									</div>
+									<div id="menu_feedback2" class="feedback-text"></div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-primary">Tovább</button>
+								</div>
+							</div>
+						</div>
+
+					<div class="carousel-item">
+						<div class="modal-content">
+							<div>
+								<button type="button" class="close pr-2" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
-              </div>
+							</div>
+							<div class="modal-body">
+								<h6 class="modal-title mb-4" id="exampleModalCenterTitle">Mennyire vagy elégedett a tanfolyam oktatójával?</h6>
+								<div class="row justify-content-center my-4">
+									<div class="col-2">
+										<img id="nagyonrossz3" src="assets/images/nagyonrossz.svg" alt="" width="60">
+									</div>
+									<div class="col-2">
+										<img id="nemtetszett3" src="assets/images/rossz.svg" alt="" width="60">
+									</div>
+									<div class="col-2">
+										<img id="elment3" src="assets/images/elmegy.svg" alt="" width="60">
+									</div>
+									<div class="col-2">
+										<img id="tetszett3" src="assets/images/tetszett.svg" alt="" width="60">
+									</div>
+									<div class="col-2">
+										<img id="imadtam3" src="assets/images/imádtam.svg" alt="" width="60">
+									</div>
+								</div>
+								<div id="menu_feedback3" class="feedback-text">
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-primary">Tovább</button>
+							</div>
+						</div>
+					</div>
 
-              <div class="modal-body">
-                <h6 class="modal-title mb-4" id="exampleModalCenterTitle">Összességében mennyire vagy elégedett a tanfolyammal?</h6>
+				</div><!--/carousel-inner-->
+				</div><!--/carouselExampleIndicators-->
 
-                <div class="row justify-content-center my-4">
-        					<div class="col-2 text-center">
-                		<img id="nagyonrossz" src="assets/images/nagyonrossz.svg" alt="" width="60">
-                	</div>
-        					<div class="col-2 text-center">
-        						<img id="nemtetszett" src="assets/images/rossz.svg" alt="" width="60">
-        					</div>
-        					<div class="col-2 text-center">
-        						<img id="elment" src="assets/images/elmegy.svg" alt="" width="60">
-        					</div>
-        					<div class="col-2 text-center">
-        						<img id="tetszett" src="assets/images/tetszett.svg" alt="" width="60">
-        					</div>
-        					<div class="col-2 text-center">
-        						<img id="imadtam" src="assets/images/imádtam.svg" alt="" width="60">
-        					</div>
-                </div>
-        				<div id="menu_feedback" class="feedback-text"></div>
-              </div>
-              <div class="modal-footer">
-              <button type="button" class="btn btn-primary">Tovább</button>
-              </div>
-            </div>
-          </div>
+			</div><!--/modal-dialog-->
 
-          <div class="carousel-item">
-
-            <div class="modal-content">
-              <div>
-                <button type="button" class="close pr-2" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-
-              <div class="modal-body">
-                <h6 class="modal-title mb-4" id="exampleModalCenterTitle">Mennyire vagy elégedett a tanfolyam szakmai tartalmával?</h6>
-                <div class="row justify-content-center my-4">
-                  <div class="col-2">
-                    <img id="nagyonrossz2" src="assets/images/nagyonrossz.svg" alt="" width="60">
-                  </div>
-                  <div class="col-2">
-                    <img id="nemtetszett2" src="assets/images/rossz.svg" alt="" width="60">
-                  </div>
-                  <div class="col-2">
-                    <img id="elment2" src="assets/images/elmegy.svg" alt="" width="60">
-                  </div>
-                  <div class="col-2">
-                    <img id="tetszett2" src="assets/images/tetszett.svg" alt="" width="60">
-                  </div>
-                  <div class="col-2">
-                    <img id="imadtam2" src="assets/images/imádtam.svg" alt="" width="60">
-                  </div>
-                </div>
-                <div id="menu_feedback2" class="feedback-text"></div>
-              </div>
-              <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Tovább</button>
-      </div>
-            </div>
-          </div>
-
-          </div>
-          <div class="carousel-item">
-            <div class="modal-content">
-
-              <div>
-
-                <button type="button" class="close pr-2" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <h6 class="modal-title mb-4" id="exampleModalCenterTitle">Mennyire vagy elégedett a tanfolyam oktatójával?</h6>
-                <div class="row justify-content-center my-4">
-                  <div class="col-2">
-                    <img id="nagyonrossz3" src="assets/images/nagyonrossz.svg" alt="" width="60">
-                  </div>
-                  <div class="col-2">
-                    <img id="nemtetszett3" src="assets/images/rossz.svg" alt="" width="60">
-                  </div>
-                  <div class="col-2">
-                    <img id="elment3" src="assets/images/elmegy.svg" alt="" width="60">
-                  </div>
-                  <div class="col-2">
-                    <img id="tetszett3" src="assets/images/tetszett.svg" alt="" width="60">
-                  </div>
-                  <div class="col-2">
-                    <img id="imadtam3" src="assets/images/imádtam.svg" alt="" width="60">
-                  </div>
-                </div>
-                <div id="menu_feedback3" class="feedback-text">
-                </div>
-              </div>
-              <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Tovább</button>
-      </div>
-            </div>
-          </div>
-          </div>
-        </div>
-
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
-      </div>
 
-  </div>
-</div>
+		</div><!--/modal fade-->
 
-</div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script>
+	</div> <!--/container-->
 
-		$('#nagyonrossz').hover( function(){
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$('#nagyonrossz').hover(function() {
 			$('#menu_feedback').html('Nagyon rossz volt!');
 		});
 
-		$("#nagyonrossz").click(function(){
-    $(this).toggleClass("alma");
-});
-
-		$('#nemtetszett').hover( function(){
+		$('#nemtetszett').hover(function() {
 			$('#menu_feedback').html('Nem tetszett!');
 		});
 
-		$("#nemtetszett").click(function(){
-		$(this).toggleClass("alma");
-});
-
-		$('#elment').hover( function(){
+		$('#elment').hover(function() {
 			$('#menu_feedback').html('Egynek elment!');
 		});
 
-		$("#elment").click(function(){
-		$(this).toggleClass("alma");
-});
-
-		$('#tetszett').hover( function(){
+		$('#tetszett').hover(function() {
 			$('#menu_feedback').html('Tetszett!');
 		});
 
-		$("#tetszett").click(function(){
-		$(this).toggleClass("alma");
-});
-
-		$('#imadtam').hover( function(){
+		$('#imadtam').hover(function() {
 			$('#menu_feedback').html('Imádtam!');
 		});
 
-		$("#imadtam").click(function(){
-		$(this).toggleClass("alma");
-});
-
-    $('#nagyonrossz2').hover( function(){
-      $('#menu_feedback2').html('Nagyon rossz volt!');
-    });
-
-		$("#nagyonrossz2").click(function(){
-		$(this).toggleClass("alma");
-});
-
-    $('#nemtetszett2').hover( function(){
-      $('#menu_feedback2').html('Nem tetszett!');
-    });
-
-		$("#nemtetszett2").click(function(){
-		$(this).toggleClass("alma");
-});
-
-    $('#elment2').hover( function(){
-      $('#menu_feedback2').html('Egynek elment!');
-    });
-
-		$("#elment2").click(function(){
-		$(this).toggleClass("alma");
-});
-
-    $('#tetszett2').hover( function(){
-      $('#menu_feedback2').html('Tetszett!');
-    });
-
-		$("#tetszett2").click(function(){
-		$(this).toggleClass("alma");
-});
-
-    $('#imadtam2').hover( function(){
-      $('#menu_feedback2').html('Imádtam!');
-    });
-
-		$("#imadtam2").click(function(){
-		$(this).toggleClass("alma");
-});
-
-    $('#nagyonrossz3').hover( function(){
-      $('#menu_feedback3').html('Nagyon rossz volt!');
-    });
-
-
-				$("#nagyonrossz3").click(function(){
-				$(this).toggleClass("alma");
+		$('#nagyonrossz2').hover(function() {
+			$('#menu_feedback2').html('Nagyon rossz volt!');
 		});
 
-    $('#nemtetszett3').hover( function(){
-      $('#menu_feedback3').html('Nem tetszett!');
-    });
-
-		$("#nemtetszett3").click(function(){
-		$(this).toggleClass("alma");
-});
-
-    $('#elment3').hover( function(){
-      $('#menu_feedback3').html('Egynek elment!');
-    });
-
-		$("#elment3").click(function(){
-		$(this).toggleClass("alma");
-});
-
-    $('#tetszett3').hover( function(){
-      $('#menu_feedback3').html('Tetszett!');
-    });
-
-
-				$("#tetszett3").click(function(){
-				$(this).toggleClass("alma");
+		$('#nemtetszett2').hover(function() {
+			$('#menu_feedback2').html('Nem tetszett!');
 		});
 
-    $('#imadtam3').hover( function(){
-      $('#menu_feedback3').html('Imádtam!');
-    });
+		$('#elment2').hover(function() {
+			$('#menu_feedback2').html('Egynek elment!');
+		});
 
-		$("#imadtam3").click(function(){
-		$(this).toggleClass("alma");
-});
+		$('#tetszett2').hover(function() {
+			$('#menu_feedback2').html('Tetszett!');
+		});
 
-		</script>
-	</body>
+		$('#imadtam2').hover(function() {
+			$('#menu_feedback2').html('Imádtam!');
+		});
+
+		$('#nagyonrossz3').hover(function() {
+			$('#menu_feedback3').html('Nagyon rossz volt!');
+		});
+
+		$('#nemtetszett3').hover(function() {
+			$('#menu_feedback3').html('Nem tetszett!');
+		});
+
+		$('#elment3').hover(function() {
+			$('#menu_feedback3').html('Egynek elment!');
+		});
+
+		$('#tetszett3').hover(function() {
+			$('#menu_feedback3').html('Tetszett!');
+		});
+
+		$('#imadtam3').hover(function() {
+			$('#menu_feedback3').html('Imádtam!');
+		});
+	</script>
+</body>
+
 </html>
