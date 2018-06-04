@@ -3007,6 +3007,8 @@ width:80%;
  ***********************************************************************************/
 
 /* COUNTER */
+
+
 .counter {
 	margin-bottom: 50px;
 	text-align: center;
@@ -3901,7 +3903,13 @@ blockquote footer img {
 	color: #fff;
 }
 
-
+.full-section.counter-section {
+	background-color: #29273a;
+	color: #fff;
+}
+.full-section.counter-section .counter-value{
+	color: #ffffff;
+}
 /* BACKROUNDS AND STYLE FOR FULL SECTIONS */
 #section-1 {
 	z-index: 5;
@@ -3969,7 +3977,8 @@ blockquote footer img {
 
 #section-5 {
 	padding: 70px 0;
-	background-image: url(../../../images/backgrounds/bg-1.jpg);
+	background-image: url(assets/images/);
+	background: #00f0d1;
 }
 
 @media (min-width: 992px){
@@ -4817,7 +4826,7 @@ blockquote footer img {
 /* TYPOGRAPHY */
 .tp-caption.title {
 	color: #fff;
-	font-size: 60px;
+	font-size: 54px;
 	line-height: 72px;
 	font-weight: 300;
 }
@@ -4831,6 +4840,13 @@ blockquote footer img {
 
 .tp-caption.text {
 	color: #fff;
+	font-size: 16px;
+}
+
+.tp-caption.text-special {
+	color: #ffffff;
+	font-size: 18px;
+	letter-spacing: 3px;
 }
 
 .tp-caption .btn-white,
