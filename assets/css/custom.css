@@ -4831,6 +4831,13 @@ blockquote footer img {
 	font-weight: 300;
 }
 
+.tp-caption.large-title {
+	color: #fff;
+	font-size: 54px;
+	line-height: 72px;
+	font-weight: 400;
+}
+
 .tp-caption.title-bold {
 	color: #fff;
 	font-size: 80px;
@@ -4840,13 +4847,25 @@ blockquote footer img {
 
 .tp-caption.text {
 	color: #fff;
-	font-size: 16px;
+	font-size: 18px;
+}
+
+.tp-caption.small-text {
+	color: #fff;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.tp-caption.large-text {
+	color: #fff;
+	font-size: 24px;
+	font-weight: 400;
 }
 
 .tp-caption.text-special {
 	color: #ffffff;
 	font-size: 18px;
-	letter-spacing: 3px;
+	letter-spacing: 1px;
 }
 
 .tp-caption .btn-white,
