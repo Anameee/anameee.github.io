@@ -55,6 +55,12 @@
 			height: 300px;
 		}
 
+		.img-normal{
+			-webkit-filter: none;
+			/* Safari 6.0 - 9.0 */
+			filter: none;
+		}
+
 		/*.modal{
 margin-left: 600px;
 margin-right: 600px;
@@ -168,7 +174,9 @@ margin-right: 600px;
 									<div id="menu_feedback2" class="feedback-text"></div>
 								</div>
 								<div class="modal-footer">
-									<button type="button" class="btn btn-primary">Tovább</button>
+									<a href="#carouselExampleIndicators" class="carousel-control-next" data-slide="next" style="position: relative;">
+										<button type="button" class="btn btn-primary">Tovább</button>
+									</a>
 								</div>
 							</div>
 						</div>
@@ -182,7 +190,7 @@ margin-right: 600px;
 									</button>
 								</div>
 								<div class="modal-body">
-									<h6 class="modal-title mb-5" id="exampleModalCenterTitle">Mennyire vagy elégedett a tanfolyam oktatójával?</h6>
+									<h6 class="modal-title mb-4" id="exampleModalCenterTitle">Mennyire vagy elégedett a tanfolyam <br> oktatójával?</h6>
 									<div class="row justify-content-center my-4">
 										<div class="col-2">
 											<img id="nagyonrossz3" src="assets/images/nagyonrossz.svg" alt="" width="60">
@@ -204,7 +212,9 @@ margin-right: 600px;
 									</div>
 								</div>
 								<div class="modal-footer">
-									<button type="button" class="btn btn-primary">Tovább</button>
+									<a href="#carouselExampleIndicators" class="carousel-control-next" data-slide="next" style="position: relative;">
+										<button type="button" class="btn btn-primary">Tovább</button>
+									</a>
 								</div>
 							</div>
 						</div>
@@ -222,16 +232,16 @@ margin-right: 600px;
 
 								<!-- body -->
 								<div class="modal-body">
-									<h6 class="modal-title mt-1 mb-4" id="exampleModalCenterTitle">Mennyire vagy elégedett a tanfolyam oktatójával?</h6>
+									<h6 class="modal-title mt-1 mb-4" id="exampleModalCenterTitle">Kérjük, írd meg nekünk észrevételeidet, javaslataidat a tanfolyammal kapcsolatban:</h6>
 									<div class="row justify-content-center mt-4">
-										<textarea name="" id="" rows="3" class="w-75"></textarea>
+										<textarea name="" id="" rows="4" class="w-75"></textarea>
 									</div>
 								</div>
 
 								<!-- footer -->
-								<div class="modal-footer d-flex justify-content-between">
-									<div>Köszönjük, hogy kitöltötted a kérdőívünket!</div>
-									<button type="button" class="btn btn-primary">Tovább</button>
+								<div class="modal-footer d-flex justify-content-between py-2">
+									<div><img src="assets/images/thankyou.svg" width="50" class="img-normal my-1 pr-2 " alt="">Köszönjük, hogy kitöltötted kérdőívünket!</div>
+									<button type="button" class="btn btn-primary">Küldés</button>
 								</div>
 							</div>
 						</div>
