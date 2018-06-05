@@ -4833,7 +4833,14 @@ blockquote footer img {
 }
 
 .tp-caption.large-title {
-	color: #BD1360;
+	color: orange;
+	font-size: 54px;
+	line-height: 72px;
+	font-weight: 600;
+}
+
+.tp-caption.large-title-2 {
+	color: #fff;
 	font-size: 54px;
 	line-height: 72px;
 	font-weight: 600;
