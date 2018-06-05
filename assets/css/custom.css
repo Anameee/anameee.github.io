@@ -3016,10 +3016,10 @@ width:80%;
 
 .counter i {
 	display: inline-block;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 	color: #c2c2c2;
-	font-size: 80px;
-	line-height: 80px;
+	font-size: 70px;
+	line-height: 70px;
 	-webkit-transition: all 0.25s;
 	transition: all 0.25s;
 }
@@ -3032,8 +3032,8 @@ width:80%;
 
 .counter-value {
 	color: #252525;
-	font-size: 72px;
-	line-height: 80px;
+	font-size: 65px;
+	line-height: 90px;
 	font-weight: 300;
 }
 
@@ -3046,7 +3046,7 @@ width:80%;
 }
 
 .counter-details {
-	font-size: 14px;
+	font-size: 18px;
 	font-weight: 600;
 	text-transform: uppercase;
 }
@@ -3906,6 +3906,7 @@ blockquote footer img {
 .full-section.counter-section {
 	background-color: #29273a;
 	color: #fff;
+	opacity: .95;
 }
 .full-section.counter-section .counter-value{
 	color: #ffffff;
@@ -4832,10 +4833,10 @@ blockquote footer img {
 }
 
 .tp-caption.large-title {
-	color: #fff;
+	color: #BD1360;
 	font-size: 54px;
 	line-height: 72px;
-	font-weight: 400;
+	font-weight: 600;
 }
 
 .tp-caption.title-bold {
