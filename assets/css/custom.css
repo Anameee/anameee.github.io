@@ -3444,11 +3444,49 @@ blockquote footer img {
 	background-color: #fff;
 }
 
-.testimonial-author {
+.testimonial-2 {
 	position: relative;
-	padding-left: 70px;
+	padding: 50px 40px 55px;
+	margin-bottom: 50px;
+	background-color: #fff;
+	-webkit-transition: all 0.25s;
+	transition: all 0.25s;
+	height: 365px;
+}
+
+.testimonial-author-2 {
+	position: relative;
+	padding-left: 60px;
 	margin-bottom: 20px;
 	font-size: 13px;
+}
+
+.testimonial-author-2 img {
+	position: absolute;
+	top: 20%;
+	left: 0%;
+	text-align:center;
+	height: 50px;
+}
+
+.testimonial-author {
+	position: relative;
+	padding-left: 80px;
+	margin-bottom: 20px;
+	font-size: 13px;
+}
+
+.testimonial-author-2 h6 {
+	margin-bottom: 0;
+	line-height: px;
+	font-weight: 600;
+	margin-top: ;
+}
+
+.testimonial-2:hover {
+	z-index: 100;
+	background-color: #fff;
+	box-shadow: 20px 40px 38px 0 rgba(0, 0, 0, 0.2);
 }
 
 /*.testimonial-author img {
