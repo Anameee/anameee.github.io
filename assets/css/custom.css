@@ -3836,6 +3836,8 @@ blockquote footer img {
 	mix-blend-mode: multiply;
 }
 
+
+
 .full-section-container {
 	position: relative;
 	z-index: 4;
@@ -4369,7 +4371,7 @@ blockquote footer img {
 
 #section-52 {
 	padding: 150px 0;
-	background-image: url(../../../images/backgrounds/bg-17.jpg);
+	background-image: url(..assets/images/backgrounds/bg-17.jpg);
 }
 
 #section-52:after {
@@ -4388,6 +4390,7 @@ blockquote footer img {
 	font-size: 64px;
 	line-height: 64px;
 }
+
 
 #section-53 {
 	padding: 150px 0;
