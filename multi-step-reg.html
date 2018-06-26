@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+  <title>Hello, world!</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    input,
+    button,
+    textarea {
+      font-family: "Cabin", sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      font-family: "Cabin", sans-serif;
+    }
+
+    .wrapper {
+      width: 100%;
+      max-width: 960px;
+      margin: auto;
+    }
+
+    .wrapper form .form-section {
+      width: 100%;
+      box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.35);
+      display: none;
+    }
+
+    .wrapper form .form-section:first-child {
+      display: block;
+    }
+
+    .wrapper form .form-section header {
+      padding: 20px 40px;
+      background: #df405a;
+      color: white;
+    }
+
+    .wrapper form .form-section header p {
+      font-weight: bold;
+    }
+
+    .wrapper form .form-section .inputs {
+      padding: 40px;
+    }
+
+    .wrapper form .form-section .inputs.center {
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .wrapper form .form-section .inputs.center .field,
+    .wrapper form .form-section .inputs.center button.next {
+      margin: 0 auto;
+    }
+
+    .wrapper form .form-section .inputs button.next,
+    .wrapper form .form-section .inputs button.prev,
+    .wrapper form .form-section .inputs button.fin {
+      padding: 20px 60px;
+      border: none;
+      outline: none;
+      color: white;
+      background: #df405a;
+      transition: 0.15s ease-in-out;
+    }
+
+    .wrapper form .form-section .inputs button.next:disabled,
+    .wrapper form .form-section .inputs button.prev:disabled,
+    .wrapper form .form-section .inputs button.fin:disabled {
+      background: #aaa;
+    }
+
+    .wrapper form .form-section .inputs button.next:disabled:hover,
+    .wrapper form .form-section .inputs button.prev:disabled:hover,
+    .wrapper form .form-section .inputs button.fin:disabled:hover {
+      background: #999;
+    }
+
+    .wrapper form .form-section .inputs button.next:hover,
+    .wrapper form .form-section .inputs button.prev:hover,
+    .wrapper form .form-section .inputs button.fin:hover {
+      background: #ca223d;
+    }
+
+    .wrapper form .form-section .inputs .field label.avatarUpload {
+      color: #df405a;
+      font-size: 50px;
+      margin: 0px 0px 20px 0px;
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      border: 1px solid #df405a;
+      text-align: center;
+      line-height: 250px;
+      transition: 0.15s ease-in-out;
+    }
+
+    .wrapper form .form-section .inputs .field label.avatarUpload.center {
+      margin: 0px auto 20px auto;
+    }
+
+    .wrapper form .form-section .inputs .field label.avatarUpload:hover {
+      color: white;
+      background: #df405a;
+    }
+
+    .wrapper form .form-section .inputs .field label.avatarUpload.active {
+      background: #77EB63;
+      color: white;
+      border: 1px solid #77EB63;
+    }
+
+    .wrapper form .form-section .inputs .field input,
+    .wrapper form .form-section .inputs .field label,
+    .wrapper form .form-section .inputs .field textarea {
+      display: block;
+      margin: 10px 0;
+      width: 100%;
+    }
+
+    .wrapper form .form-section .inputs .field input[type='text'],
+    .wrapper form .form-section .inputs .field input[type='email'],
+    .wrapper form .form-section .inputs .field input[type='password'],
+    .wrapper form .form-section .inputs .field textarea {
+      padding: 10px 5px;
+      border: none;
+      border-bottom: 1px solid #df405a;
+      outline: 0;
+      transition: 0.15s ease-in-out;
+    }
+
+    .wrapper form .form-section .inputs .field textarea {
+      width: 100%;
+      max-width: 100%;
+      min-height: 300px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class='wrapper'>
+    <form>
+      <div class="form-section active" id="Form1">
+        <header>
+          <h3 class="mb-0">Hogyan szólíthatunk?</h3>
+        </header>
+        <div class="inputs">
+          <div class="field">
+            <label for="vnev">Vezetéknév</label>
+            <input type="text" id="vnev" class="input" />
+          </div>
+          <div class="field">
+            <label for="knev">Keresztnév</label>
+            <input type="text" id="knev" class="input" />
+          </div>
+          <div class="field">
+            <label for="bnev">Becenév</label>
+            <input type="text" id="bnev" class="input" />
+          </div>
+          <button class="next" disabled>Next</button>
+        </div>
+      </div>
+      <div class="form-section" id="Form2">
+        <header>
+          <p>Avatar</p>
+        </header>
+        <div class="inputs center">
+          <div class="field">
+            <label for="avatar" class="avatarUpload center"><i class="fa fa-upload" aria-hidden="true"></i></label>
+            <input type="file" id="avatar" style="display: none" class="file" />
+          </div>
+          <button class="prev">Previous</button>
+          <button class="next" disabled>Next</button>
+        </div>
+      </div>
+      <div class="form-section" id="Form3">
+        <header>
+          <p>Bio</p>
+        </header>
+        <div class="inputs">
+          <div class="field">
+            <label for="bio">Bio<label>
+				<textarea id="bio"  class="input" ></textarea>
+			</div>
+			<button class="prev">Previous</button>
+			<button class="next" disabled>Next</button>
+		</div>
+	</div>
+	<div class="form-section" id="Form4">
+		<header>
+			<p>Password</p>
+		</header>
+		<div class="inputs">
+			<div class="field">
+				<label for="pass">Password<label>
+				<input type="password" id="pass" class="input" />
+			</div>
+			<div class="field">
+				<label for="pass2">Confirm Password<label>
+				<input type="password" id="pass2" class="input" />
+			</div>
+			<button class='prev' >Previous</button>
+			<button class='fin' disabled>Finsish</button>
+		</div>
+	</div>
+</form>
+</div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <script>
+
+    $(document).on('click', 'button.next', function(e){
+
+	e.preventDefault();
+
+	if(!$(e.target).is(":disabled")){
+		var btnTarget = $(e.target).parents(".form-section").next(".form-section")
+
+		$(".form-section").not(btnTarget).slideUp(350, function(){
+			$(btnTarget).slideDown(350);
+		});
+	}
+
+
+});
+$(document).on('click', 'button.prev', function(e){
+
+	e.preventDefault();
+
+	if(!$(e.target).is(":disabled")){
+		var btnTarget = $(e.target).parents(".form-section").prev(".form-section")
+
+		$(".form-section").not(btnTarget).slideUp(350, function(){
+			$(btnTarget).slideDown(350);
+		});
+	}
+
+
+});
+
+$(".form-section").keyup( function(){
+
+	$(this).find(".input").each( function(i){
+
+		if(!$(this).val().length == 0){
+			$(this).parents(".form-section").find("button.next").prop("disabled", false);
+			$(this).parents(".form-section").find("button.fin").prop("disabled", false);
+		}else if($(this).val().length == 0){
+			$(this).parents(".form-section").find("button.next").prop("disabled", true);
+			$(this).parents(".form-section").find("button.fin").prop("disabled", true);
+		}
+
+	});
+
+
+	$(this).find("input[type='file']").on('change', function(e){
+
+
+		if(!$(this).val().length == 0){
+			$(this).parents(".form-section").find("button.next").prop("disabled", false);
+			$(this).parents(".form-section").find("button.fin").prop("disabled", false);
+			console.log("false");
+		}else if($(this).val().length == 0){
+			$(this).parents(".form-section").find("button.next").prop("disabled", true);
+			$(this).parents(".form-section").find("button.fin").prop("disabled", true);
+			console.log("true");
+		}
+	});
+
+
+});
+$(".form-section").each( function(){
+
+	$(this).find(".input").each( function(i){
+
+		if(!$(this).val().length == 0){
+			$(this).parents(".form-section").find("button.next").prop("disabled", false);
+			$(this).parents(".form-section").find("button.fin").prop("disabled", false);
+		}else if($(this).val().length == 0){
+			$(this).parents(".form-section").find("button.next").prop("disabled", true);
+			$(this).parents(".form-section").find("button.fin").prop("disabled", true);
+		}
+
+	});
+
+
+	$(this).find("input[type='file']").on('change', function(e){
+
+		if(!$(this).val().length == 0){
+			$(this).parents(".form-section").find("button.next").prop("disabled", false);
+			$(this).parents(".form-section").find("button.fin").prop("disabled", false);
+			$("label[for='"+ $(this).attr("id") + "']").addClass("active")
+		}else if($(this).val().length == 0){
+			$(this).parents(".form-section").find("button.next").prop("disabled", true);
+			$(this).parents(".form-section").find("button.fin").prop("disabled", true);
+		}
+	});
+
+
+});
+
+$(document).on('click', 'button.fin', function(e){
+	e.preventDefault();
+	$(e.target).parents(".wrapper").slideUp(350);
+
+	setTimeout( function(){
+		$(e.target).parents("form").submit();
+	}, 350);
+
+
+});
+
+
+
+    </script>
+</body>
+
+</html>
