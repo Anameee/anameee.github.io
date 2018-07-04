@@ -1,28 +1,343 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="assets/fonts/decode-icons/css/decode-icons.min.css">
+  <title>videos oldal</title>
+  <style>
+    .header {
+      height: 300px;
+      background-color: #fff;
+      background-image: url(assets/images/indulo-bg.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
 
+    .video-bg {
+      background: #f1f6f9;
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: 'Open Sans', sans-serif;
+      color: #434343;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    p {
+      line-height: 28px;
+    }
+
+    h1 {
+      color: #ffffff;
+      padding-top: 100px;
+    }
+
+    .playlist {
+      height: 428px;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+
+    @media screen and (max-width: 1200px) and (min-width: 992px) {
+      .playlist {
+        height: 300px;
+      }
+    }
+
+    .big-block {
+      min-height: 600px;
+    }
+
+    .img-circle {
+      border-radius: 50%;
+      -moz-box-shadow: 1px 2px 8px 0px rgba(0, 0, 0, .3);
+      -webkit-box-shadow: 1px 2px 8px 0px rgba(0, 0, 0, .3);
+      box-shadow: 1px 2px 8px 0px rgba(0, 0, 0, .3);
+    }
+
+    .video-box {
+      /*-moz-box-shadow: 1px 2px 8px 0px rgba(0, 0, 0, .3);
+      -webkit-box-shadow: 1px 2px 8px 0px rgba(0, 0, 0, .3);
+      box-shadow: 1px 2px 8px 0px rgba(0, 0, 0, .3);*/
+      background: rgba(250, 250, 250, 1)
+    }
+
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    /* Track */
+
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      box-shadow: inset 0 0 5px grey;
+    }
+
+    /* Handle */
+
+    ::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 10px;
+    }
+
+    /* Handle on hover */
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #2d9ad2;
+    }
+
+    a {
+      color: #434343;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: #2d9ad2;
+    }
+
+    a .letoltes {
+      color: #000000;
+    }
+
+    a .letoltes:hover {
+      color: #2d9ad2;
+    }
+
+    .border-right-color {
+      border-right: 1px solid #2d9ad2;
+    }
+
+    .minus-margin {
+      margin-top: 20px;
+    }
+
+    @media (min-width:992px) {
+      .minus-margin {
+        margin-top: -80px;
+      }
+    }
+
+    .video-icon {
+      font-size: 30px;
+      margin-right: 15px;
+      color: #2d9ad2;
+    }
+
+    .bg-blue{
+      background: #f1f6f9;
+    }
+  </style>
+</head>
+
+<body class="video-bg">
+  <div class="header">
     <div class="container">
-      <div class="row">
+      <h1 class="mt-5">A Raspberry PI és a beágyazott szoftverfejlesztés</h1>
+    </div>
+  </div>
+  <div class="container minus-margin">
+    <div class="row video-box">
+      <div class="col-lg-7 col-xl-8 my-auto px-0">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/DmEC-DIkCoE" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="col-lg-5 col-xl-4 playlist px-0">
+        <div class="almost-standart">
 
-      
+          <div class="big-block border-bottom">
+
+            <div class="row border-bottom py-3">
+              <div class="col-2 my-auto">
+                <a href="#"><img src="assets/images/play-button.svg" width="20" alt="" class="ml-5 ml-lg-3"></a>
+              </div>
+              <div class="col-7 my-auto">
+                <a href="#">Linux alapok, Raspbian rendszer sajátosságai 1</a>
+              </div>
+              <div class="col-2 mx-auto my-auto">
+                22:25
+              </div>
+              <div class="col-lg-8 text-center mt-2">
+                <a href="#"><img src="assets/images/musical-note.svg" height="15" alt="" class="mr-2"><small>mp3 letöltése</small></a>
+              </div>
+            </div>
+
+            <div class="row border-bottom py-3">
+              <div class="col-2 my-auto">
+                <a href="#"><img src="assets/images/play-button.svg" width="20" alt="" class="ml-5 ml-lg-3"></a>
+              </div>
+              <div class="col-7 my-auto">
+                <a href="#">Linux alapok, Raspbian rendszer sajátosságai 1</a>
+              </div>
+              <div class="col-2 mx-auto my-auto">
+                22:25
+              </div>
+              <div class="col-lg-8 text-center mt-2">
+                <a href="#"><img src="assets/images/musical-note.svg" height="15" alt="" class="mr-2"><small>mp3 letöltése</small></a>
+              </div>
+            </div>
+
+            <div class="row border-bottom py-3">
+              <div class="col-2 my-auto">
+                <a href="#"><img src="assets/images/play-button.svg" width="20" alt="" class="ml-5 ml-lg-3"></a>
+              </div>
+              <div class="col-7 my-auto">
+                <a href="#">Linux alapok, Raspbian rendszer sajátosságai 1</a>
+              </div>
+              <div class="col-2 mx-auto my-auto">
+                22:25
+              </div>
+              <div class="col-lg-8 text-center mt-2">
+                <a href="#"><img src="assets/images/musical-note.svg" height="15" alt="" class="mr-2"><small>mp3 letöltése</small></a>
+              </div>
+            </div>
+
+            <div class="row border-bottom py-3">
+              <div class="col-2 my-auto">
+                <a href="#"><img src="assets/images/play-button.svg" width="20" alt="" class="ml-5 ml-lg-3"></a>
+              </div>
+              <div class="col-7 my-auto">
+                <a href="#">Linux alapok, Raspbian rendszer sajátosságai 1</a>
+              </div>
+              <div class="col-2 mx-auto my-auto">
+                22:25
+              </div>
+              <div class="col-lg-8 text-center mt-2">
+                <a href="#"><img src="assets/images/musical-note.svg" height="15" alt="" class="mr-2"><small>mp3 letöltése</small></a>
+              </div>
+            </div>
+
+            <div class="row border-bottom py-3">
+              <div class="col-2 my-auto">
+                <a href="#"><img src="assets/images/play-button.svg" width="20" alt="" class="ml-5 ml-lg-3"></a>
+              </div>
+              <div class="col-7 my-auto">
+                <a href="#">Linux alapok, Raspbian rendszer sajátosságai 1</a>
+              </div>
+              <div class="col-2 mx-auto my-auto">
+                22:25
+              </div>
+              <div class="col-lg-8 text-center mt-2">
+                <a href="#"><img src="assets/images/musical-note.svg" height="15" alt="" class="mr-2"><small>mp3 letöltése</small></a>
+              </div>
+            </div>
+
+            <div class="row border-bottom py-3 ">
+              <div class="col-2 my-auto">
+                <a href="#"><img src="assets/images/play-button.svg" width="20" alt="" class="ml-5 ml-lg-3"></a>
+              </div>
+              <div class="col-7 my-auto">
+                <a href="#">Linux alapok, Raspbian rendszer sajátosságai 1</a>
+              </div>
+              <div class="col-2 mx-auto my-auto">
+                22:25
+              </div>
+              <div class="col-lg-8 text-center mt-2">
+                <a href="#"><img src="assets/images/musical-note.svg" height="15" alt="" class="mr-2"><small>mp3 letöltése</small></a>
+              </div>
+            </div>
+
+            <div class="row border-bottom py-3">
+              <div class="col-2 my-auto">
+                <a href="#"><img src="assets/images/play-button.svg" width="20" alt="" class="ml-5 ml-lg-3"></a>
+              </div>
+              <div class="col-7 my-auto">
+                <a href="#">Linux alapok, Raspbian rendszer sajátosságai 1</a>
+              </div>
+              <div class="col-2 mx-auto my-auto">
+                22:25
+              </div>
+              <div class="col-lg-8 text-center mt-2">
+                <a href="#"><img src="assets/images/musical-note.svg" height="15" alt="" class="mr-2"><small>mp3 letöltése</small></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-12 p-4 mt-3">
+        <h5>Aktuális videó címe</h5>
+        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae vero reiciendis dolorum sunt dolor commodi tenetur, harum consequatur quidem, totam eius maxime, sint dolore quod dolorem cum, doloribus recusandae repudiandae?</p>
+      </div>
+    </div>
+    <!--videobox row-end-->
+
+    <div class="row video-box mt-4">
+
+      <div class="col-lg-4 my-5 px-5 border-right-color">
+        <h4 class="mb-3">Tanfolyam információk</h4>
+        <p><i class="decode-icon-graduation video-icon"></i><b>Előkövetelmények:</b></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, unde!</p>
+        <p><i class="decode-icon-growth video-icon"></i><b>Szint:</b> Középhaladó</p>
+        <p><i class="decode-icon-cursor video-icon"></i><b>Tanfolyam hossza:</b> 20 óra</p>
+        <p><i class="decode-icon-time video-icon"></i><b>Kezdés:</b> 2018.05.6</p>
+      </div>
+
+      <div class="col-lg-8 mb-5 my-lg-5 px-5">
+        <h4 class="mb-3">Leírás</h4>
+        <p>A tanfolyam azoknak segít, akik már ismerik a Facebook hirdetések alapjait, de szeretnének többet kihozni a hirdetéseikből! A tanfolyam során 4 olyan haladó hirdetési praktikát mutatok be, amelyek segíthetnek abban, hogy hatékonyabban és eredményesebben
+          érd el a célközönségedet. </p>
+        <p>Az ajánlatok, érdeklődőkeresési űrlap, vászon és a remarketing mind-mind olyan technikák, amelyeket vagy kevesen használnak, vagy rosszul használják őket. A tanfolyam során nemcsak azt mutatom meg, hogyan lehet jól használni ezeket az eszközöket,
+          hanem arra is kitérünk, hogy melyik hogyan és miben tud segíteni neked! </p>
+        <p>A tanfolyam után sokkal többféle módon érheted el és szólíthatod meg a célközönségedet a Facebookon!</p>
       </div>
     </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-  </body>
+    <div class="row video-box mt-4">
+      <div class="col-12 my-5 px-5">
+        <h5 class="mb-3"><i class="decode-icon-creativity video-icon"></i>További információk:</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore pariatur iste, debitis voluptatem. Illo laboriosam possimus porro facilis repellat blanditiis ad velit officia cupiditate, laborum, accusantium ab illum quia, repudiandae debitis
+          iure. Sed sint neque repellendus non a cupiditate aut.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam nulla totam earum deleniti in aliquam aperiam voluptatibus sit, error cupiditate eum voluptas, cum quod temporibus. Voluptates quod, fugit commodi. Quaerat.</p>
+        <h5 class="mt-5 mb-3"><i class="decode-icon-link video-icon"></i>Letölthető anyagok, linkek:</h5>
+        <a href="#">Lorem ipsum dolor.</a><br>
+        <a href="#">Lorem ipsum dolor.</a>
+      </div>
+    </div>
+
+
+
+    <div class="row video-box my-4 py-5">
+      <div class="col-12 px-5">
+        <h5 class="mb-5">Oktatók:</h5></div>
+      <div class="col-md-3 text-center">
+        <img src="assets/images/avatar-man.svg" alt="" class="img-fluid img-circle" width="100">
+        <p class="pt-3">Oktató Neve</p>
+      </div>
+      <div class="col-md-3 text-center">
+        <img src="assets/images/avatar-man.svg" alt="" class="img-fluid img-circle" width="100">
+        <p class="pt-3">Oktató Neve</p>
+      </div>
+      <div class="col-md-3 text-center">
+        <img src="assets/images/avatar-man.svg" alt="" class="img-fluid img-circle" width="100">
+        <p class="pt-3">Oktató Neve</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+  <script>
+  </script>
+</body>
+
 </html>

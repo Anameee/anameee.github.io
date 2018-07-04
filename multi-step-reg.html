@@ -48,15 +48,15 @@
       display: block;
     }
 
-    .wrapper form .form-section header {
+    /*.wrapper form .form-section header {
       padding: 20px 40px;
       background: #df405a;
       color: white;
-    }
+    }*/
 
-    .wrapper form .form-section header p {
+    /*.wrapper form .form-section header p {
       font-weight: bold;
-    }
+    }*/
 
     .wrapper form .form-section .inputs {
       padding: 40px;
@@ -101,33 +101,7 @@
       background: #ca223d;
     }
 
-    .wrapper form .form-section .inputs .field label.avatarUpload {
-      color: #df405a;
-      font-size: 50px;
-      margin: 0px 0px 20px 0px;
-      width: 250px;
-      height: 250px;
-      border-radius: 50%;
-      border: 1px solid #df405a;
-      text-align: center;
-      line-height: 250px;
-      transition: 0.15s ease-in-out;
-    }
 
-    .wrapper form .form-section .inputs .field label.avatarUpload.center {
-      margin: 0px auto 20px auto;
-    }
-
-    .wrapper form .form-section .inputs .field label.avatarUpload:hover {
-      color: white;
-      background: #df405a;
-    }
-
-    .wrapper form .form-section .inputs .field label.avatarUpload.active {
-      background: #77EB63;
-      color: white;
-      border: 1px solid #77EB63;
-    }
 
     .wrapper form .form-section .inputs .field input,
     .wrapper form .form-section .inputs .field label,
@@ -141,7 +115,7 @@
     .wrapper form .form-section .inputs .field input[type='email'],
     .wrapper form .form-section .inputs .field input[type='password'],
     .wrapper form .form-section .inputs .field textarea {
-      padding: 10px 5px;
+      padding: 0px 5px;
       border: none;
       border-bottom: 1px solid #df405a;
       outline: 0;
@@ -161,58 +135,99 @@
   <div class='wrapper'>
     <form>
       <div class="form-section active" id="Form1">
-        <header>
-          <h3 class="mb-0">Hogyan szólíthatunk?</h3>
-        </header>
         <div class="inputs">
+          <h4 class="mb-4">Köszöntünk az ország legmenőbb Online Oktatási Intézményében!
+          <br>Hogyan szólíthatunk?</h4>
           <div class="field">
-            <label for="vnev">Vezetéknév</label>
+            <label for="vnev">Vezetéknév:</label>
             <input type="text" id="vnev" class="input" />
           </div>
           <div class="field">
-            <label for="knev">Keresztnév</label>
+            <label for="knev">Keresztnév:</label>
             <input type="text" id="knev" class="input" />
           </div>
           <div class="field">
-            <label for="bnev">Becenév</label>
+            <label for="bnev">Becenév:</label>
             <input type="text" id="bnev" class="input" />
           </div>
-          <button class="next" disabled>Next</button>
+          <button class="next mt-4" disabled>Következő</button>
         </div>
       </div>
       <div class="form-section" id="Form2">
-        <header>
-          <p>Avatar</p>
-        </header>
-        <div class="inputs center">
+
+        <div class="inputs">
           <div class="field">
-            <label for="avatar" class="avatarUpload center"><i class="fa fa-upload" aria-hidden="true"></i></label>
-            <input type="file" id="avatar" style="display: none" class="file" />
+            <h4 class="mb-4">Szia XY! Hova küldjük el a bejelentkezéshez szükséges linket?</h4>
+            <label for="emailcim">Email:</label>
+            <input type="email" class="input" id="emailcim">
+            <small id="emailHelp" class="form-text text-muted">Nem kell aggódnod, senkinek sem adjuk ki az emil címed!</small>
+          </div>
+          <button class="prev mt-4">Előző</button>
+          <button class="next mt-4" disabled>Következő</button>
+        </div>
+      </div>
+      <div class="form-section" id="Form3">
+
+        <div class="inputs">
+          <div class="field">
+            <h4>Milyen témakörök iránt érdeklődsz a leginkább?</h4>
+
+            <div class="row my-5">
+              <div class="col-6">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">
+                  Default checkbox
+                </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                  <label class="form-check-label" for="defaultCheck2">
+                  Disabled checkbox
+                </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                  <label class="form-check-label" for="defaultCheck3">
+                  Default checkbox
+                </label>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                  <label class="form-check-label" for="defaultCheck4">
+                  Default checkbox
+                </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+                  <label class="form-check-label" for="defaultCheck5">
+                  Disabled checkbox
+                </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck6">
+                  <label class="form-check-label" for="defaultCheck6">
+                  Default checkbox
+                </label>
+                </div>
+              </div>
+            </div>
+
+
           </div>
           <button class="prev">Previous</button>
           <button class="next" disabled>Next</button>
         </div>
       </div>
-      <div class="form-section" id="Form3">
+      <div class="form-section" id="Form4">
         <header>
-          <p>Bio</p>
+          <p>Password</p>
         </header>
         <div class="inputs">
           <div class="field">
-            <label for="bio">Bio<label>
-				<textarea id="bio"  class="input" ></textarea>
-			</div>
-			<button class="prev">Previous</button>
-			<button class="next" disabled>Next</button>
-		</div>
-	</div>
-	<div class="form-section" id="Form4">
-		<header>
-			<p>Password</p>
-		</header>
-		<div class="inputs">
-			<div class="field">
-				<label for="pass">Password<label>
+            <label for="pass">Password<label>
 				<input type="password" id="pass" class="input" />
 			</div>
 			<div class="field">
@@ -282,7 +297,7 @@ $(".form-section").keyup( function(){
 	});
 
 
-	$(this).find("input[type='file']").on('change', function(e){
+	$(this).find("input[type='email']").on('change', function(e){
 
 
 		if(!$(this).val().length == 0){
@@ -302,27 +317,11 @@ $(".form-section").each( function(){
 
 	$(this).find(".input").each( function(i){
 
-		if(!$(this).val().length == 0){
-			$(this).parents(".form-section").find("button.next").prop("disabled", false);
-			$(this).parents(".form-section").find("button.fin").prop("disabled", false);
-		}else if($(this).val().length == 0){
+		if($(this).val().length == 0){
 			$(this).parents(".form-section").find("button.next").prop("disabled", true);
 			$(this).parents(".form-section").find("button.fin").prop("disabled", true);
 		}
 
-	});
-
-
-	$(this).find("input[type='file']").on('change', function(e){
-
-		if(!$(this).val().length == 0){
-			$(this).parents(".form-section").find("button.next").prop("disabled", false);
-			$(this).parents(".form-section").find("button.fin").prop("disabled", false);
-			$("label[for='"+ $(this).attr("id") + "']").addClass("active")
-		}else if($(this).val().length == 0){
-			$(this).parents(".form-section").find("button.next").prop("disabled", true);
-			$(this).parents(".form-section").find("button.fin").prop("disabled", true);
-		}
 	});
 
 
