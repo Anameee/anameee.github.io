@@ -1411,6 +1411,15 @@ letter-spacing: 1.2px;
 	background-color: #00f0d1;
 }
 
+.image-box > .link a {
+	color: #232c3d;
+	text-decoration: none;
+}
+
+.image-box > .link a:hover {
+	color: #00f0d1;
+}
+
 .image-box > *:last-child {
 	margin-bottom: 0;
 }
