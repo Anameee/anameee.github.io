@@ -936,6 +936,14 @@ color: #ff931e;
 	list-style: none;
 }
 
+.logos-list-2 {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+	text-align: center;
+	list-style: none;
+}
+
 .logos-list li {
 	flex-basis: 20%;
 }
