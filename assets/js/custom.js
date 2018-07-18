@@ -963,6 +963,130 @@
 
                 }
 
+                //GENERAL FORM//
+
+                if (typeof $.fn.validate !== 'undefined') {
+
+                        $("#general-form").validate({
+                                rules: {
+                                        name: {
+                                                required: true
+                                        },
+                                        email: {
+                                                required: true,
+                                                email: true
+                                        },
+                                        subject: {
+                                                required: true
+                                        },
+                                        message: {
+                                                required: true,
+                                                minlength: 3
+                                        },
+                                        kapcsolattarto: {
+                                                required: true,
+                                                  minlength: 3
+                                        },
+                                        phone: {
+                                                required: true
+                                        },
+                                        name2: {
+                                                required: true
+                                        },
+                                        city: {
+                                                required: true
+                                        },
+                                        adress: {
+                                                required: true
+                                        },
+                                        zip: {
+                                                required: true
+                                        },
+                                        tax: {
+                                                required: true
+                                        },
+                                        aszf: {
+                                                required: true
+                                        },
+                                        aszf: {
+                                                adatvedelem: true
+                                        },
+                                },
+                                messages: {
+                                        name: {
+                                                required: "Add meg a nevedet!"
+                                        },
+                                        email: {
+                                                required: "Kérlek add meg az email-címed!",
+                                                email: "Kérlek valós e-mail címet adj meg!"
+                                        },
+                                        subject: {
+                                                required: "Please enter the subject!"
+                                        },
+                                        message: {
+                                                required: "Please enter your message!"
+                                        },
+                                        kapcsolattarto: {
+                                                required: "A mező kitöltése kötelező!"
+                                        },
+                                        phone: {
+                                                required: "A mező kitöltése kötelező!"
+                                        },
+                                        name2: {
+                                                required: "A mező kitöltése kötelező!"
+                                        },
+                                        city: {
+                                                required: "A mező kitöltése kötelező!"
+                                        },
+                                        adress: {
+                                                required: "A mező kitöltése kötelező!"
+                                        },
+                                        zip: {
+                                                required: "A mező kitöltése kötelező!"
+                                        },
+                                        tax: {
+                                                required: "A mező kitöltése kötelező!"
+                                        },
+                                        aszf: {
+                                                required: "Az Általános szerződési feltételek elfogadása kötelező!"
+                                        },
+                                        adatvedelem: {
+                                                required: "Az Adatvédelmi szabályzat elfogadása kötelező!"
+                                        },
+                                },
+
+
+                                // SUBMIT //
+                                submitHandler: function(form) {
+                                        var result;
+                                        $(form).ajaxSubmit({
+                                                type: "POST",
+                                                data: $(form).serialize(),
+                                                url: "assets/php/send.php",
+                                                success: function(msg) {
+
+                                                        if (msg == 'OK') {
+                                                                result = '<div class="alert alert-success">Your message was successfully sent!</div>';
+                                                                $("#contact-form").clearForm();
+                                                        } else {
+                                                                result = msg;
+                                                        }
+
+                                                        $("#alert-area").html(result);
+
+                                                },
+                                                error: function() {
+
+                                                        result = '<div class="alert alert-danger">There was an error sending the message!</div>';
+                                                        $("#alert-area").html(result);
+
+                                                }
+                                        });
+                                }
+                        });
+
+                }
+
 
                 // PARALLAX //
                 if (typeof $.fn.stellar !== 'undefined') {

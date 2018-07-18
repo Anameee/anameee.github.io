@@ -2910,6 +2910,21 @@
 	width: 100%;
 }
 
+/*general-form*/
+
+#general-form label.error,
+#general-form #name-error,
+#general-form #email-error,
+#general-form #subject-error,
+#general-form #message-error,
+#general-form input:focus ~ label.error,
+#general-form textarea:focus ~ label.error {
+	margin-top: -50px;
+	color: #ff0050;
+	font-size: 12px;
+	font-style: normal;
+}
+
 /* DARK SECTION */
 .full-section.dark-section #contact-form label {
 	color: inherit;

@@ -184,67 +184,59 @@
 			<div class="container">
 
 				<div class="row justify-content-center">
-					<div class="col-md-8">
+					<div class="col-md-10 col-lg-8">
 
-						<form id="contact-form" method="post" action="">
+						<form id="general-form" method="post" action="">
 							<fieldset>
 
 								<div id="alert-area"></div>
 
 								<p>
-									<input class="col-12" id="name" type="text" placeholder="" name="kapcsolattarto" required>
-									<span></span>
-									<label for="name">Kapcsolattartó neve</label>
+										<label for="name">Kapcsolattartó neve:</label>
+									<input class="col-12 mb-0" id="name" type="text" placeholder="" name="kapcsolattarto" required>
 								</p>
 
 								<p>
-									<input class="col-12" id="email" type="text" name="email" placeholder="" required>
-									<span></span>
 									<label for="email">Értesítési email-cím:</label>
+									<input class="col-12 mb-0" id="email" type="text" name="email" placeholder="" required>
 								</p>
 								<p class="mb-2"><small>Kérjük, valós e-mail címet adjon meg, mert az aktiváló levelet ide fogjuk elküldeni!</small></p>
 
 								<p>
-									<input class="col-12" id="subject" type="text" name="phone" placeholder="" required>
-									<span></span>
 									<label for="phone">Telefonszám:</label>
+									<input class="col-12 mb-0" id="phone" type="text" name="phone" placeholder="" required>
 								</p>
 
 								<h4 class="my-5">Számlázási cím</h4>
 
 								<p>
-									<input class="col-12" id="name2" type="text" name="name2" placeholder="" required>
-									<span></span>
 									<label for="name2">Név:</label>
+									<input class="col-12 mb-0" id="name2" type="text" name="name2" placeholder="" required>
 								</p>
 
 								<p>
-									<input class="col-12" id="city" type="text" name="city" placeholder="" required>
-									<span></span>
 									<label for="city">Város:</label>
+									<input class="col-12 mb-0" id="city" type="text" name="city" placeholder="" required>
 								</p>
 
 								<p>
-									<input class="col-12" id="adress" type="text" name="adress" placeholder="" required>
-									<span></span>
 									<label for="adress">Cím:</label>
+									<input class="col-12 mb-0" id="adress" type="text" name="adress" placeholder="" required>
 								</p>
 
 								<p>
-									<input class="col-12" id="zip" type="text" name="zip" placeholder="" required>
-									<span></span>
 									<label for="zip">Irányítószám:</label>
+									<input class="col-12 mb-0" id="zip" type="text" name="zip" placeholder="" required>
 								</p>
 
 								<p>
-									<input class="col-12" id="tax" type="text" name="tax" placeholder="" required>
-									<span></span>
 									<label for="tax">Adószám:</label>
+									<input class="col-12 mb-0" id="tax" type="text" name="tax" placeholder="" required>
 								</p>
 
 							</fieldset>
 
-
+<div class="mt-3">
 						<div class="checkbox">
 							<label>
 								<input type="checkbox" name="aszf" value="">
@@ -259,7 +251,7 @@
 								<span></span>
 							</label>
 						</div>
-
+</div>
 						<h4 class="my-5">Fizetési mód</h4>
 						<div class="radio">
 							<label>
@@ -316,27 +308,24 @@
 				Admin section
 			</h4>
 
-						<form id="contact-form" name="contact-form" method="post" action="assets/php/send.php">
+						<form id="general-form" name="contact-form" method="post" action="">
 							<fieldset>
 
 								<div id="alert-area"></div>
 
 								<p>
-									<input class="col-12" id="name" type="text" placeholder="" required>
-									<span></span>
 									<label for="name">Admin price</label>
+									<input class="col-12 mb-0" id="name" type="text" placeholder="" required>
 								</p>
 
 								<p>
-									<input class="col-12" id="email" type="text" placeholder="" required>
-									<span></span>
 									<label for="email">Task:</label>
+									<input class="col-12 mb-0" id="email" type="text" placeholder="" required>
 								</p>
 
 								<p>
-									<input class="col-12" id="subject" type="text" placeholder="" required>
-									<span></span>
 									<label for="subject">One activation date:</label>
+									<input class="col-12 mb-0" id="subject" type="text" placeholder="" required>
 								</p>
 
 							</fieldset>
