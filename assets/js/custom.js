@@ -860,7 +860,8 @@
                                                 minlength: 3
                                         },
                                         kapcsolattarto: {
-                                                required: true
+                                                required: true,
+                                                  minlength: 3
                                         },
                                         phone: {
                                                 required: true
@@ -928,7 +929,7 @@
                                         adatvedelem: {
                                                 required: "Az Adatvédelmi szabályzat elfogadása kötelező!"
                                         },
-                                }
+                                },
 
 
                                 // SUBMIT //
