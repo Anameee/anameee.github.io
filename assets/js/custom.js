@@ -858,7 +858,34 @@
                                         message: {
                                                 required: true,
                                                 minlength: 3
-                                        }
+                                        },
+                                        kapcsolattarto: {
+                                                required: true
+                                        },
+                                        phone: {
+                                                required: true
+                                        },
+                                        name2: {
+                                                required: true
+                                        },
+                                        city: {
+                                                required: true
+                                        },
+                                        adress: {
+                                                required: true
+                                        },
+                                        zip: {
+                                                required: true
+                                        },
+                                        tax: {
+                                                required: true
+                                        },
+                                        aszf: {
+                                                required: true
+                                        },
+                                        aszf: {
+                                                adatvedelem: true
+                                        },
                                 },
                                 messages: {
                                         name: {
@@ -873,8 +900,35 @@
                                         },
                                         message: {
                                                 required: "Please enter your message!"
-                                        }
-                                },
+                                        },
+                                        kapcsolattarto: {
+                                                required: "A mező kitöltése kötelező!"
+                                        },
+                                        phone: {
+                                                required: "A mező kitöltése kötelező!"
+                                        },
+                                        name2: {
+                                                required: "A mező kitöltése kötelező!"
+                                        },
+                                        city: {
+                                                required: "A mező kitöltése kötelező!"
+                                        },
+                                        adress: {
+                                                required: "A mező kitöltése kötelező!"
+                                        },
+                                        zip: {
+                                                required: "A mező kitöltése kötelező!"
+                                        },
+                                        tax: {
+                                                required: "A mező kitöltése kötelező!"
+                                        },
+                                        aszf: {
+                                                required: "Az Általános szerződési feltételek elfogadása kötelező!"
+                                        },
+                                        adatvedelem: {
+                                                required: "Az Adatvédelmi szabályzat elfogadása kötelező!"
+                                        },
+                                }
 
 
                                 // SUBMIT //
