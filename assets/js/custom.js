@@ -1005,12 +1005,7 @@
                                         tax: {
                                                 required: true
                                         },
-                                        aszf: {
-                                                required: true
-                                        },
-                                        aszf: {
-                                                adatvedelem: true
-                                        },
+
                                 },
                                 messages: {
                                         name: {
@@ -1047,12 +1042,7 @@
                                         tax: {
                                                 required: "A mező kitöltése kötelező!"
                                         },
-                                        aszf: {
-                                                required: "Az Általános szerződési feltételek elfogadása kötelező!"
-                                        },
-                                        adatvedelem: {
-                                                required: "Az Adatvédelmi szabályzat elfogadása kötelező!"
-                                        },
+                                      
                                 },
 
 

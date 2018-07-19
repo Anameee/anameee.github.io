@@ -1121,13 +1121,14 @@
 
 #screens-section img:nth-child(2) {
 	z-index: 2;
-	margin-left: -90px;
+	margin-left: 90px;
+	margin-top: -40px;
 }
 
 #screens-section img:nth-child(3) {
 	position: absolute;
-	right: -150px;
-	bottom: -25px;
+	right: 100px;
+	top: -55px;
 	z-index: 1;
 }
 
@@ -2873,6 +2874,13 @@
 
 .quick-contact-form #contact-form {
 	margin-bottom: 0;
+}
+
+.quick-contact-form.style-3 {
+	position: relative;
+	padding: 40px 80px 40px;
+	border: 2px solid #ebebeb;
+	background: #ffffff;
 }
 
 .quick-contact-form.style-2 {
