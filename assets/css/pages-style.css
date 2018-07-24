@@ -2831,7 +2831,7 @@
 }
 
 #contact-form input:focus ~ span,
-#contact-form textarea:focus~  span {
+#contact-form textarea:focus ~ span {
 	width: 100%;
 }
 
@@ -2846,7 +2846,7 @@
 	top: 100%;
 	margin-top: -20px;
 	color: #ff0050;
-	font-size: 14px;
+	font-size: 11px;
 	font-style: normal;
 }
 
