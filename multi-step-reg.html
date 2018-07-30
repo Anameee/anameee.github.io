@@ -24,6 +24,10 @@
     }
 
     body {
+      background: url(assets/images/multi-reg-bg.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
       min-height: 100vh;
       display: flex;
       justify-content: center;
@@ -32,10 +36,12 @@
       font-family: "Cabin", sans-serif;
     }
 
+
     .wrapper {
       width: 100%;
       max-width: 960px;
       margin: auto;
+      background-color: rgba(255,255,255, 1);
     }
 
     .wrapper form .form-section {
@@ -48,15 +54,6 @@
       display: block;
     }
 
-    /*.wrapper form .form-section header {
-      padding: 20px 40px;
-      background: #df405a;
-      color: white;
-    }*/
-
-    /*.wrapper form .form-section header p {
-      font-weight: bold;
-    }*/
 
     .wrapper form .form-section .inputs {
       padding: 40px;
@@ -79,7 +76,7 @@
       border: none;
       outline: none;
       color: white;
-      background: #df405a;
+      background: #00f0d1;
       transition: 0.15s ease-in-out;
     }
 
@@ -98,7 +95,7 @@
     .wrapper form .form-section .inputs button.next:hover,
     .wrapper form .form-section .inputs button.prev:hover,
     .wrapper form .form-section .inputs button.fin:hover {
-      background: #ca223d;
+      background: #00f0d1;
     }
 
 
@@ -117,7 +114,7 @@
     .wrapper form .form-section .inputs .field textarea {
       padding: 0px 5px;
       border: none;
-      border-bottom: 1px solid #df405a;
+      border-bottom: 1px solid #00f0d1;
       outline: 0;
       transition: 0.15s ease-in-out;
     }
@@ -127,17 +124,20 @@
       max-width: 100%;
       min-height: 300px;
     }
+
+
   </style>
 </head>
 
 <body>
 
-  <div class='wrapper'>
+  <div class="wrapper">
     <form>
       <div class="form-section active" id="Form1">
         <div class="inputs">
           <h4 class="mb-4">Köszöntünk az ország legmenőbb Online Oktatási Intézményében!
-          <br>Hogyan szólíthatunk?</h4>
+          <br><br>Hogyan szólíthatunk?</h4>
+          <div class="my-5">
           <div class="field">
             <label for="vnev">Vezetéknév:</label>
             <input type="text" id="vnev" class="input" />
@@ -150,17 +150,20 @@
             <label for="bnev">Becenév:</label>
             <input type="text" id="bnev" class="input" />
           </div>
+          </div>
           <button class="next mt-4" disabled>Következő</button>
         </div>
       </div>
-      <div class="form-section" id="Form2">
 
+      <div class="form-section" id="Form2">
         <div class="inputs">
           <div class="field">
             <h4 class="mb-4">Szia XY! Hova küldjük el a bejelentkezéshez szükséges linket?</h4>
+            <div class="my-5">
             <label for="emailcim">Email:</label>
             <input type="email" class="input" id="emailcim">
             <small id="emailHelp" class="form-text text-muted">Nem kell aggódnod, senkinek sem adjuk ki az emil címed!</small>
+          </div>
           </div>
           <button class="prev mt-4">Előző</button>
           <button class="next mt-4" disabled>Következő</button>
@@ -213,29 +216,34 @@
                 </label>
                 </div>
               </div>
+              <div class="col-6 mt-4" style="margin-left:20px;">
+                <div class="field">
+                  <label for="egyeb">Egyéb:</label>
+                  <input type="text" class="input" id="emailcim">
+                </div>
+              </div>
             </div>
-
-
           </div>
-          <button class="prev">Previous</button>
-          <button class="next" disabled>Next</button>
+          <button class="prev">Előző</button>
+          <button class="next" disabled>Következő</button>
         </div>
       </div>
+
       <div class="form-section" id="Form4">
-        <header>
-          <p>Password</p>
-        </header>
         <div class="inputs">
+          <h4 class="mb-4">Add meg a jelszavad!</h4>
+          <div class="my-5">
           <div class="field">
-            <label for="pass">Password<label>
+            <label for="pass">Jelszó:<label>
 				<input type="password" id="pass" class="input" />
 			</div>
 			<div class="field">
-				<label for="pass2">Confirm Password<label>
+				<label for="pass2">Jelszó még egyszer:<label>
 				<input type="password" id="pass2" class="input" />
 			</div>
-			<button class='prev' >Previous</button>
-			<button class='fin' disabled>Finsish</button>
+      </div>
+			<button class='prev' >Előző</button>
+			<button class='fin' disabled>Kész!</button>
 		</div>
 	</div>
 </form>
